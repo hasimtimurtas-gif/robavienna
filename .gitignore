@@ -1,0 +1,56 @@
+# ==========================================================================
+# ROBA VIENNA - WORDPRESS & GITHUB .GITIGNORE
+# Sadece özel temamızı, mu-plugins, dokümanları ve CI/CD akışını takip eder.
+# ==========================================================================
+
+# 1. İşletim Sistemi ve IDE Dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# 2. WordPress Çekirdek Dosyaları (Sunucuda/LocalWP'de otomatik bulunur)
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# 3. Hassas Yapılandırma Dosyaları (KESİNLİKLE GİT'E GİTMEMELİ)
+wp-config.php
+.env
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# 4. Yüklenen Medyalar ve Önbellek Dosyaları
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/wflogs/
+
+# 5. Standart WordPress Eklentileri (Resmi repodan indirilenler)
+# Eğer özel bir eklenti yazılırsa !wp-content/plugins/ozel-eklenti/ şeklinde eklenir
+/wp-content/plugins/*
+!/wp-content/plugins/.gitkeep
+
+# 6. Standart Temalar (Flatsome ana teması lisanslıdır, git'e eklenmez)
+/wp-content/themes/*
+!/wp-content/themes/flatsome-child/
+
+# 7. Takip Edilecek Özel Bölümler
+!/wp-content/mu-plugins/
+!/docs/
+!/sample-data/
+!.github/
+!README.md
+!.htaccess
+!wp-config-production-sample.php

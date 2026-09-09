@@ -1,0 +1,79 @@
+/* ==========================================================================
+   ROBA VIENNA - TİPOGRAFİ & LÜKS TASARIM (typography.css)
+   (DSGVO/GDPR Uyumlu - Harici Google CDN çağrısı yapılmaz)
+   ========================================================================== */
+
+/* 1. Başlık Standartları */
+h1.entry-title,
+.product-title,
+.hero-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 600;
+    color: #4A3E35;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+}
+
+.product-title a {
+    color: #4A3E35;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.product-title a:hover {
+    color: #8C7A6B;
+}
+
+/* 2. Ürün Fiyat Tipografisi */
+.price,
+.woocommerce-Price-amount {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #23201E;
+    font-size: 1.15rem;
+}
+
+ins .woocommerce-Price-amount {
+    color: #9C382A; /* İndirimli fiyat tonu */
+}
+
+del .woocommerce-Price-amount {
+    color: #9E968F;
+    font-weight: 400;
+    font-size: 0.95rem;
+}
+
+/* 3. Ekmek Kırıntısı (Breadcrumbs) */
+.woocommerce-breadcrumb {
+    font-size: 0.8rem;
+    color: #8C7A6B;
+    margin-bottom: 20px;
+}
+
+.woocommerce-breadcrumb a {
+    color: #6E6862;
+    text-decoration: none;
+}
+
+.woocommerce-breadcrumb a:hover {
+    color: #4A3E35;
+}
+
+/* 4. Alt Başlık ve Sloganlar */
+.roba-subheading {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #8C7A6B;
+    margin-bottom: 12px;
+}
+
+.roba-eyebrow {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    font-weight: 600;
+    color: #8C7A6B;
+    margin-bottom: 8px;
+    display: block;
+}

@@ -1,0 +1,86 @@
+# ==========================================================================
+# ROBA VIENNA - ULTRA OPTİMİZE EDİLMİŞ .HTACCESS YAPILANDIRMASI
+# (LiteSpeed, Güvenlik, Tarayıcı Önbelleği & Gzip)
+# ==========================================================================
+
+# 1. DİZİN LİSTELEMESİNİ VE DOSYA GÖZATMAYI ENGELLE
+Options -Indexes
+
+# 2. KRİTİK DOSYALARA ERİŞİMİ ENGELLE
+<FilesMatch "^(wp-config\.php|readme\.html|license\.txt|\.env|\.git|\.user\.ini)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 3. XML-RPC BLOKLAMA (DDoS ve Brute-Force Koruması)
+<Files xmlrpc.php>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 4. GZIP / DEFLATE SIKIŞTIRMASI (HIZLI YÜKLEME)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/x-woff
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# 5. TARAYICI ÖNBELLEKLEME (EXPIRES HEADERS)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # Görseller (WebP, AVIF, JPG, PNG)
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/avif "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Yazı Tipleri (Fonts)
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+
+    # CSS & JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+
+    # Dinamik HTML
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# 6. LITESPEED CACHE MODÜL YÖNERGELERİ
+<IfModule Litespeed>
+    RewriteEngine On
+    CacheLookup on
+    RewriteRule .* - [E=Cache-Control:no-autoflush]
+    
+    # Sepet ve Ödeme Sayfalarını Önbelleğe Alma
+    RewriteCond %{REQUEST_URI} /cart|/checkout|/my-account [NC]
+    RewriteRule .* - [E=Cache-Control:no-cache]
+</IfModule>
+
+# 7. STANDART WORDPRESS REWRITE KURALLARI
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>

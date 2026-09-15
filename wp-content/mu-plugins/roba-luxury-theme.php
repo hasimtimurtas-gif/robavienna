@@ -62,6 +62,22 @@ function roba_inject_luxury_design_styles() {
             color: var(--roba-primary) !important;
         }
 
+        .custom-logo-link img,
+        .site-logo img,
+        .custom-logo {
+            max-height: 52px !important;
+            width: auto !important;
+            border-radius: 6px !important;
+            box-shadow: 0 3px 12px rgba(10, 15, 30, 0.15) !important;
+            display: inline-block !important;
+            vertical-align: middle !important;
+            transition: transform 0.2s ease !important;
+        }
+
+        .custom-logo-link:hover img {
+            transform: scale(1.03) !important;
+        }
+
         .main-header-menu .menu-item > a,
         .nav-menu .menu-item > a,
         #site-navigation a {

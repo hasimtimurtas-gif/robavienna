@@ -17,19 +17,20 @@ Impressum
 Angaben gemäß § 5 E-Commerce-Gesetz (ECG) und Offenlegungspflicht gemäß § 25 Mediengesetz:
 
 Unternehmensbezeichnung: ROBA Vienna
-Inhaber: Hicret Turhan Timurtas
+Inhaberin: Hicret Turhan Timurtas
 Rechtsform: Einzelunternehmen
 Unternehmensgegenstand: Handel mit Textilwaren (insb. Handtücher und Heimtextilien)
-Standort der Gewerbeberechtigung: Wien, Österreich
-Anschrift: [Tam Adresiniz: Sokak, Kapı No, Posta Kodu, Wien, Österreich]
+Standort der Gewerbeberechtigung (Geschäftsanschrift): 
+Weißenböckstraße 41/2, 1110 Wien, Österreich
 
 Kontakt:
-Telefon: [Telefon Numaranız]
 E-Mail: info@robavienna.com
-Website: https://robavienna.com
+Website: https://www.robavienna.com
 
-Umsatzsteuer-Identifikationsnummer (UID): [ATU-Numaranız veya Kleinunternehmerregelung muafiyet notu]
-Zuständige Aufsichtsbehörde / Gewerbebehörde: Magistratisches Bezirksamt des [...] Bezirkes Wien
+Umsatzsteuer-Identifikationsnummer (UID): ATU82689039
+Steuernummer: 03 749/6775
+GISA-Zahl: 38737541
+Zuständige Gewerbebehörde: Magistrat der Stadt Wien (Magistratisches Bezirksamt für den 11. Bezirk)
 Mitgliedschaft bei der Wirtschaftskammerorganisation: Wirtschaftskammer Wien (WKO), Sparte Handel
 Anwendbare Rechtsvorschriften: Gewerbeordnung (GewO) – abrufbar unter www.ris.bka.gv.at
 

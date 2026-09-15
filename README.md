@@ -77,6 +77,15 @@ Otomatik dağıtımın canlı sunucunuza bağlanabilmesi için GitHub reponuzda 
 
 ---
 
-## ⚖️ Hukuk ve Lisans
+## ⚖️ Şirket Profili ve Hukuki Bilgiler
 
-Bu proje **ROBA Vienna** ve şirket sahibi **Hicret Turhan Timurtas** mülkiyetindedir. Avusturya ve Almanya e-ticaret kanunlarına (ECG, GewO, FAGG, BGB) tam uyumlu olarak tasarlanmıştır.
+- **Unternehmensbezeichnung:** ROBA Vienna
+- **Inhaberin:** Hicret Turhan Timurtas (Einzelunternehmen)
+- **Standort:** Weißenböckstraße 41/2, 1110 Wien, Österreich
+- **GISA-Zahl:** 38737541 (Gewerbeinformationssystem Austria)
+- **UID-Nummer:** ATU82689039
+- **Steuernummer:** 03 749/6775
+- **Aufsichtsbehörde:** Magistrat der Stadt Wien (Magistratisches Bezirksamt für den 11. Bezirk)
+- **Kammer:** Wirtschaftskammer Wien (WKO), Sparte Handel
+- **Markenherkunft:** Denizli (Sermir Tekstil - Hasan Timurtaş) doğrudan aile ithalatı. Marka adı Robin & Bahar'dan ilham almıştır.
+- **Website:** https://www.robavienna.com

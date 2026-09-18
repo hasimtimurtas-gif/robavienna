@@ -204,6 +204,82 @@ function roba_inject_luxury_design_styles() {
         .woocommerce-message::before, .woocommerce-info::before {
             color: var(--roba-primary) !important;
         }
+
+        /* 7. Sayfa Düzeni ve İletişim / Hakkımızda Yerleşimi (Designer Fix) */
+        .page .entry-header,
+        .page .ast-single-post-order {
+            display: none !important;
+        }
+
+        .site-content .ast-container {
+            max-width: 1160px !important;
+            margin: 0 auto !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+
+        .roba-page-wrap {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding: 30px 0 60px 0;
+            width: 100%;
+        }
+
+        .roba-contact-grid {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: wrap !important;
+            gap: 36px !important;
+            justify-content: center !important;
+            align-items: stretch !important;
+            width: 100% !important;
+        }
+
+        .roba-info-box {
+            flex: 1 1 380px !important;
+            max-width: 460px !important;
+            min-width: 300px !important;
+            background: #FFFFFF !important;
+            border: 1px solid #E8E2DA !important;
+            border-radius: 10px !important;
+            padding: 36px !important;
+            box-shadow: 0 6px 24px rgba(74, 62, 53, 0.05) !important;
+            box-sizing: border-box !important;
+        }
+
+        .roba-form-box {
+            flex: 1 1 440px !important;
+            max-width: 540px !important;
+            min-width: 300px !important;
+            background: #FFFFFF !important;
+            border: 1px solid #E8E2DA !important;
+            border-radius: 10px !important;
+            padding: 36px !important;
+            box-shadow: 0 6px 24px rgba(74, 62, 53, 0.05) !important;
+            box-sizing: border-box !important;
+        }
+
+        .roba-form-box input,
+        .roba-form-box select,
+        .roba-form-box textarea {
+            width: 100% !important;
+            border: 1px solid #D8C8B8 !important;
+            border-radius: 4px !important;
+            padding: 12px 14px !important;
+            font-size: 0.95rem !important;
+            background: #FFFFFF !important;
+            color: #2B2B2B !important;
+            box-sizing: border-box !important;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+        }
+
+        .roba-form-box input:focus,
+        .roba-form-box select:focus,
+        .roba-form-box textarea:focus {
+            border-color: #4A3E35 !important;
+            outline: none !important;
+            box-shadow: 0 0 0 3px rgba(74, 62, 53, 0.12) !important;
+        }
     </style>
     <?php
 }
